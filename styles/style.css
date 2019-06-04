@@ -1,0 +1,93 @@
+body{
+  background : #333;
+}
+
+
+#container{
+  border:1px solid #333;
+  border-radius :20px;
+  width:400px;
+  margin:20px auto;
+  padding:20px;
+  text-align:center;
+  background : #333;
+}
+
+#timer{ 
+  color:#B0C4DE; 
+  font-size:50px; 
+  margin:10px auto;
+  border : 5px solid #B0C4DE;
+  border-radius:2%;
+  width:200px;
+  height:100px;
+  overflow:hidden;
+  position:relative;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor:default;
+}
+
+#time{
+  margin-top:7px;
+  z-index : 1;
+  position:relative;
+}
+
+#filler{
+  background : #ddffcc;
+  height: 0px;
+  width: 200px;
+  position:absolute;
+  bottom:0;
+}
+ #buttons button {
+  position: relative;
+  background-color: #4CAF50;
+  border: none;
+  font-size: 28px;
+  color: #FFFFFF;
+  padding: 20px;
+  width: 200px;
+  text-align: center;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+}
+#buttons button:after {
+  content: "";
+  background: #90EE90;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px!important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s
+}
+
+#buttons button:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}
+
+
+
+#buttons button#shortBreak{
+  background : #0c0;
+}
+
+#buttons button#longBreak{
+  background : #080;
+}
+
+#buttons button#stop{
+  background : #f00;
+}
